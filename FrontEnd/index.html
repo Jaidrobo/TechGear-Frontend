@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>TechGear - Tu Destino Tecnológico</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-indigo-600">
+                <i class="fas fa-bolt"></i> TechGear
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#productos" class="text-gray-600 hover:text-indigo-600 transition duration-300">Productos</a>
+                <a href="#categorias" class="text-gray-600 hover:text-indigo-600 transition duration-300">Categorías</a>
+                <a href="#video" class="text-gray-600 hover:text-indigo-600 transition duration-300">Promociones</a>
+                <a href="#contacto" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
+            </div>
+            <div class="flex items-center space-x-5">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300"><i class="fas fa-search"></i></a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300"><i class="fas fa-user"></i></a>
+                <button id="menu-btn" class="md:hidden text-gray-600 hover:text-indigo-600">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#productos" class="block py-2 px-6 text-sm hover:bg-gray-200">Productos</a>
+            <a href="#categorias" class="block py-2 px-6 text-sm hover:bg-gray-200">Categorías</a>
+            <a href="#video" class="block py-2 px-6 text-sm hover:bg-gray-200">Promociones</a>
+            <a href="#contacto" class="block py-2 px-6 text-sm hover:bg-gray-200">Contacto</a>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ========== Hero Section con Canvas ========== -->
+        <section class="bg-indigo-700 text-white py-20 md:py-32 relative overflow-hidden">
+            <canvas id="interactive-bg"></canvas>
+            <div class="hero-content container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 fade-in" style="animation-delay: 0.2s;">La Tecnología del Mañana.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto fade-in" style="animation-delay: 0.4s;">Descubre las últimas innovaciones en gadgets, computadoras y accesorios que transformarán tu vida digital.</p>
+                <a href="#productos" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 duration-300 inline-block fade-in" style="animation-delay: 0.6s;">Explorar Ahora</a>
+            </div>
+        </section>
+
+        <!-- ========== Productos Destacados ========== -->
+        <section id="productos" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Productos Destacados</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Producto 1 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/6366f1/ffffff?text=Smartphone" alt="Smartphone Pro X" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Smartphone Pro X</h3>
+                            <p class="text-gray-600 mb-4">La nueva generación de velocidad y fotografía móvil.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-indigo-600">$999</span>
+                                <button class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Producto 2 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/34d399/ffffff?text=Laptop+Ultra" alt="Laptop Ultra" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Laptop UltraBook</h3>
+                            <p class="text-gray-600 mb-4">Potencia y portabilidad para profesionales creativos.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-indigo-600">$1450</span>
+                                <button class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Producto 3 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/fbbf24/ffffff?text=Auriculares" alt="Auriculares Inalámbricos" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Auriculares SonicWave</h3>
+                            <p class="text-gray-600 mb-4">Sonido inmersivo con cancelación de ruido activa.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-indigo-600">$249</span>
+                                <button class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Producto 4 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/f87171/ffffff?text=Smartwatch" alt="Smartwatch" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Smartwatch Vita 2</h3>
+                            <p class="text-gray-600 mb-4">Tu salud y notificaciones, directamente en tu muñeca.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-indigo-600">$320</span>
+                                <button class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Sección de Video Promocional ========== -->
+        <section id="video" class="bg-gray-800 py-20 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Vive la Innovación</h2>
+                <p class="mb-8 max-w-2xl mx-auto">Mira nuestro video para descubrir cómo la tecnología de TechGear puede inspirar tu día a día.</p>
+                <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                    <!-- El video se puede reemplazar por uno de YouTube, Vimeo, o un archivo local -->
+                    <video controls poster="https://placehold.co/1280x720/1f2937/ffffff?text=Video+Promocional">
+                        <!-- Fuente de ejemplo. No funcionará, es solo un placeholder -->
+                        <source src="movie.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== Categorías ========== -->
+        <section id="categorias" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Explora por Categoría</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <a href="#" class="group block text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-mobile-alt text-5xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="mt-4 font-semibold text-lg">Móviles</h3>
+                    </a>
+                    <a href="#" class="group block text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-laptop text-5xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="mt-4 font-semibold text-lg">Portátiles</h3>
+                    </a>
+                    <a href="#" class="group block text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-headphones text-5xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="mt-4 font-semibold text-lg">Audio</h3>
+                    </a>
+                    <a href="#" class="group block text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-keyboard text-5xl text-indigo-500 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="mt-4 font-semibold text-lg">Accesorios</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== Formulario de Suscripción ========== -->
+        <section id="contacto" class="bg-indigo-50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-lg shadow-xl p-8 md:p-12 max-w-2xl mx-auto">
+                    <h2 class="text-2xl font-bold text-center mb-4">¡No te pierdas de nada!</h2>
+                    <p class="text-gray-600 text-center mb-8">Suscríbete a nuestro boletín para recibir ofertas exclusivas y las últimas noticias tecnológicas.</p>
+                    <form action="#" method="POST" class="flex flex-col sm:flex-row gap-4">
+                        <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Tu correo electrónico" 
+                            required 
+                            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-shadow"
+                        >
+                        <button 
+                            type="submit" 
+                            class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-md hover:bg-indigo-700 transition-all duration-300 whitespace-nowrap"
+                        >
+                            Suscribirme
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><i class="fas fa-bolt"></i> TechGear</h3>
+                    <p class="text-gray-400">Innovación y estilo en cada producto.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navegación</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#productos" class="hover:text-indigo-400 transition">Productos</a></li>
+                        <li class="mb-2"><a href="#categorias" class="hover:text-indigo-400 transition">Categorías</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-indigo-400 transition">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soporte</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:text-indigo-400 transition">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-indigo-400 transition">Envíos</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-indigo-400 transition">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 TechGear. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
