@@ -20,22 +20,17 @@ _**Maqueta:**_ _mediante la cual, se demuestra el dominio de **HTML5, CSS3 avanz
 ## Estructura del proyecto - TechGear
 
 /techgear-frontend/
-
 ├── assets/ --> .png
-
 ├── css/     
-    - style.css
-
+     - style.css
 ├── js/    
-    - script.js
-    
+     - script.js   
 ├── index.html  
-
 └── README.md  
 
-### logo e-commerce
+#### _Logo e-commerce_
 
-![Test en web](assets/desktop.png)
+![Test en web](assets/logo.png)
 
 ### 📸 Demostración Responsive
 
@@ -72,6 +67,6 @@ Los principales desafíos técnicos abordados se centran en la eficiencia y la i
    _Nota: La animación 3D utiliza la librería Three.js, la cual se carga a través de un CDN, por lo que no necesitas ninguna instalación adicional_.
 
 
-**📄 Licencia**
+**📄 _Licencia_**
 
 Este proyecto está bajo la Licencia MIT.
