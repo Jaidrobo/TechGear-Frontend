@@ -24,14 +24,18 @@ _**Maqueta:**_ _mediante la cual, se demuestra el dominio de **HTML5, CSS3 avanz
 ├── assets/ --> .png
 
 ├── css/     
-    └── style.css
+    - style.css
 
 ├── js/    
-    └── script.js
+    - script.js
     
 ├── index.html  
 
 └── README.md  
+
+### logo e-commerce
+
+![Test en web](assets/desktop.png)
 
 ### 📸 Demostración Responsive
 
@@ -51,12 +55,12 @@ _**Maqueta:**_ _mediante la cual, se demuestra el dominio de **HTML5, CSS3 avanz
 
 ------------------ // --------------------------
 
-## 🚧 Desafío
+### 🚧 Desafío
 
 Los principales desafíos técnicos abordados se centran en la eficiencia y la inicialización de librerías en un entorno de producción _(inicialización del Canvas, Sincronización del DOM y Preparación de Tailwind para Producción)_
 
 
-## ⚙️ Instalación y Uso
+### ⚙️ Instalación y Uso
 
 - _Clonar el Repositorio (en GitHub)_
 
@@ -68,5 +72,6 @@ Los principales desafíos técnicos abordados se centran en la eficiencia y la i
    _Nota: La animación 3D utiliza la librería Three.js, la cual se carga a través de un CDN, por lo que no necesitas ninguna instalación adicional_.
 
 
-📄 Licencia
+**📄 Licencia**
+
 Este proyecto está bajo la Licencia MIT.
