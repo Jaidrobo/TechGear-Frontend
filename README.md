@@ -20,11 +20,15 @@ _**Maqueta:**_ _mediante la cual, se demuestra el dominio de **HTML5, CSS3 avanz
 ## Estructura del proyecto - TechGear
 
 /techgear-frontend/
+
 ├── assets/ --> .png
+
 ├── css/     
      - style.css
+
 ├── js/    
      - script.js   
+     
 ├── index.html  
 └── README.md  
 
