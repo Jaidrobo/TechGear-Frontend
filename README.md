@@ -28,9 +28,7 @@ _**Maqueta:**_ _mediante la cual, se demuestra el dominio de **HTML5, CSS3 avanz
 ├── index.html  
 └── README.md  
 
-#### _Logo e-commerce_
-
-![Test en web](assets/logo.png)
+------------------ // --------------------------
 
 ### 📸 Demostración Responsive
 
