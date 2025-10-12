@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone Pro X",
+      "category": "Móviles",
+      "price": 999,
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "name": "Laptop UltraBook",
+      "category": "Portátiles",
+      "price": 1450,
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "name": "Auriculares SonicWave",
+      "category": "Audio",
+      "price": 249,
+      "stock": 120
+    }
+  ]
+}

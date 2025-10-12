@@ -1,0 +1,3 @@
+:host { display: block; animation: slideUp .35s ease; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(12px);} to { opacity:1; transform:none; } }
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched { border-color: #ef4444; }

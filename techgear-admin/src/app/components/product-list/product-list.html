@@ -1,0 +1,29 @@
+<div class="p-6">
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold">Gestión de Productos</h2>
+    <button (click)="addProduct()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+      ➕ Nuevo Producto
+    </button>
+  </div>
+
+  <div *ngIf="loading" class="text-center py-10">Cargando...</div>
+
+  <div *ngIf="!loading && products.length">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div *ngFor="let p of products" class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all">
+        <h3 class="text-xl font-semibold text-gray-800">{{ p.name }}</h3>
+        <p class="text-gray-500">{{ p.category }}</p>
+        <p class="text-green-600 font-bold mt-2">${{ p.price }}</p>
+        <p class="text-sm text-gray-600 mt-1">{{ p.description || 'Sin descripción' }}</p>
+        <div class="flex justify-between mt-4">
+          <button (click)="editProduct(p.id)" class="text-yellow-600 hover:underline">Editar</button>
+          <button (click)="deleteProduct(p.id)" class="text-red-600 hover:underline">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!loading && products.length === 0" class="text-center text-gray-500 mt-10">
+    No hay productos disponibles.
+  </div>
+</div>
